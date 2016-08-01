@@ -1,0 +1,125 @@
+
+.gradient {
+	background: rgb(247,211,37);
+	background: -webkit-linear-gradient(yellow, rgb(239,98,41)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(yellow, rgb(239,98,41)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(yellow, rgb(239,98,41)); /* For Firefox 3.6 to 1
+	background: linear-gradient(yellow, rgb(239,98,41)); /* Standard syntax */
+}
+
+
+.navbar {
+	border-width: 0;
+	border-color: rgb(247,211,37);
+	border-radius: 10px;
+}
+
+.list-class {
+	width: 75%;
+	margin: 0 auto;
+}
+
+h5,
+p,
+li {
+	color: #666666;
+}
+
+.footer {
+	margin: 10px;
+}
+
+.thanks {
+	font-size: 1.2em;
+}
+
+.list-group-item {
+	background-color: rgb(250,250,250);
+}
+
+#playButton {
+	
+	margin-bottom: 20px;
+	padding: 20px;
+	color: #EEEEEE;
+	text-align: center;
+	border-radius: 35px;
+	background-color: green;
+	
+}
+
+.input-sm {
+	padding: 5px;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.numInput, 
+.result {
+	font-family: "Rockwell";
+	font-style: bold;
+	font-weight: 500;
+	margin: 5px;
+	height: 30px;
+}
+
+h2 {
+	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 48px;
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+h2,
+h4 {
+	color: #EEEEEE;
+}
+
+.moneytrack {
+	color: #EEEEEE;
+	font-size: 2em;
+	text-align: center;
+	padding-top: 25px;
+}
+
+#money, #dollarSign {
+	font-size: 2em;
+}
+
+.green {
+	background-color: green;
+	color: #EEEEEE;
+}
+
+.red {
+	background-color: red;
+}
+
+#welcome {
+	text-align: center;
+}
+
+input {
+	text-align: center;
+	width: 80px;
+}
+
+
+.numbers {
+	height: 25%;
+	padding-top: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+body {
+	background-image: url("./images/background.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	background-color: rgb(247,211,37);
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=.8">
+	<title>Lottery</title>
+	 <!-- JQuery CDN -->
+    <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="lettering.js"></script>
+	<script src="circletype.js"></script>
+
+</head>
+<body>
+<nav id="mainNav" class="navbar navbar-default gradient">
+	<div class="container-fluid navDiv">
+		<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+        		<span class="sr-only">Toggle navigation</span>Menu <i class="fa fa-bars"></i>
+        	</button>
+          
+          <a class="navbar-brand page-scroll" href="./index.html">Lottery Project</a>
+		</div> <!-- end navbar-header -->
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div id="navbar2" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+        		<li><a href="./about.html" class="page-scroll">About</a></li>
+        	</ul>
+        	
+        </div>
+	</div> <!-- end container-fluid for the navbar -->
+</nav>
+<div class="container-fluid screen">
+	<div class="row">
+		<div class="titleContainer col-xs-12">
+			<h2 id="title">The Lucky Lottery</h2>
+			<h5>A very difficult game to loose</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-xs-12">
+			<div class="inputs col-xs-12 col-sm-6">
+				<h4>Your numbers</h4>
+				<select class="numInput form-control" id="pick1" onchange="view.validateInput(this)">
+					<option disabled selected value>pick your number</option>
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			        <option>5</option>
+			        <option>6</option>
+			        <option>7</option>
+			        <option>8</option>
+			        <option>9</option>
+			        <option>10</option>
+			    </select>
+			    <select class="numInput form-control" id="pick2" onchange="view.validateInput(this)">
+			    	<option disabled selected value>pick your number</option>
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			        <option>5</option>
+			        <option>6</option>
+			        <option>7</option>
+			        <option>8</option>
+			        <option>9</option>
+			        <option>10</option>
+			    </select>
+			    <select class="numInput form-control" id="pick3" onchange="view.validateInput(this)">
+			    	<option disabled selected value>pick your number</option>
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			        <option>5</option>
+			        <option>6</option>
+			        <option>7</option>
+			        <option>8</option>
+			        <option>9</option>
+			        <option>10</option>
+			    </select>
+			    <select class="numInput form-control" id="pick4" onchange="view.validateInput(this)">
+			    	<option disabled selected value>pick your number</option>
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			        <option>5</option>
+			        <option>6</option>
+			        <option>7</option>
+			        <option>8</option>
+			        <option>9</option>
+			        <option>10</option>
+			    </select>
+			</div>
+			<div class="results col-xs-12 col-sm-6">
+				<h4>Results</h4>
+				<input id="num1" class="result form-control input-sm" readonly>
+				<input id="num2" class="result form-control input-sm" readonly>
+				<input id="num3" class="result form-control input-sm" readonly>
+				<input id="num4" class="result form-control input-sm" readonly>
+			</div>
+			<br>
+			<br>
+		</div>
+		<div class="col-sm-6 col-xs-12">
+			<div class="moneytrack">You have <span id=dollarSign>$</span><span id="money">10</span> to spend</div>
+			<div class="playButton">
+				<button id="playButton">Play!</button>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<h4>Two bucks a play. Match two or more numbers, and you win!</h4>
+	</div>
+</div>
+<br>
+
+<script src="index.js"></script>
+
+</body>
+</html>
