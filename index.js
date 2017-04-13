@@ -121,9 +121,11 @@ function Controller (m) {
 	};
 
 	this.getNums = function(numArray, updateCallback) {
-		$.get('http://159.203.175.239:8001/', function(res) {
-			this.callback(res, numArray, updateCallback);
-		}.bind(this));
+		this.callback(Math.floor((Math.random() * 10) + 1), numArray, updateCallback);
+		// this URL is no longer available, so need to use javascript built in random number above
+		// $.get('http://159.203.175.239:8001/', function(res) {
+		//	this.callback(res, numArray, updateCallback).bind(this);
+		// }.bind(this));
 	};
 
 	this.callback = function(res, numArray, updateCallback) {
